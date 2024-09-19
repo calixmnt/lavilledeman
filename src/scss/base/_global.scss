@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  body {
+    font-family: "AritaBuri", sans-serif;
+    background-color: #fff;
+    transition: 0.7s background-color cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+}

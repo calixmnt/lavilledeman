@@ -1,0 +1,68 @@
+.header {
+  position: relative;
+  display: block;
+  background: $white;
+  padding: 2.5rem 0;
+  z-index: 99;
+
+  font-weight: 600;
+  &__container {
+    padding: 0 2rem;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    letter-spacing: -0.1rem;
+  }
+
+  &__link {
+    display: block;
+    text-transform: capitalize;
+
+    span {
+      display: block;
+      position: relative;
+    }
+
+    span:nth-child(1) {
+      padding-left: 1.5rem;
+    }
+
+    span:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0.5rem;
+      height: 0.2rem;
+      width: 1.8rem;
+      background-color: $black;
+    }
+  }
+
+  &__custom-text {
+    display: block;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  &__item {
+    &:last-of-type {
+      margin-left: 20rem;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-transform: lowercase;
+  }
+}
