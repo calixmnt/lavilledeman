@@ -6,7 +6,7 @@
 
 html {
   body {
-    font-family: "AritaBuri", sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #fff;
     transition: 0.7s background-color cubic-bezier(0.77, 0, 0.175, 1);
   }
@@ -18,5 +18,58 @@ html {
 
   li {
     list-style: none;
+  }
+
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .app {
+    display: grid;
+    grid-template-rows: 1fr auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .header {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+
+  .main {
+    grid-row: 2 / 7;
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+  }
+
+  .presentation {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-rows: .5fr .5fr 2fr;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+
+    row-gap: 1.6rem;
+
+  }
+
+  .footer {
+    grid-row: 7 / 8;
+    grid-column: 1 / -1;
+  }
+
+  .second-heading {
+    font-size: $section-title;
+    text-transform: lowercase;
+    line-height: 3rem;
+  }
+
+  .fourth-heading {
+    font-size: $medium-text;
+    text-transform: lowercase;
+    margin-bottom: 0.5rem;
   }
 }

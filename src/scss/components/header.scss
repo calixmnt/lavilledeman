@@ -2,21 +2,20 @@
   position: relative;
   display: block;
   background: $white;
-  padding: 2.5rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   z-index: 99;
-
   font-weight: 600;
-  &__container {
-    padding: 0 2rem;
-  }
 
   &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: .2fr 1fr 1fr 1fr;
   }
 
   &__logo {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
     letter-spacing: -0.1rem;
   }
 
@@ -36,28 +35,29 @@
     span:nth-child(2)::after {
       content: "";
       position: absolute;
-      right: 0;
-      bottom: 0.5rem;
+      right: 1.2rem;
+      bottom: .5rem;
       height: 0.2rem;
       width: 1.8rem;
       background-color: $black;
     }
   }
-
-  &__custom-text {
-    display: block;
-  }
 }
 
 .nav {
+  grid-column: 3 / -1;
+
   &__list {
-    display: flex;
-    column-gap: 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto auto auto 2fr;
+    column-gap: 2.5rem;
   }
 
   &__item {
+
     &:last-of-type {
-      margin-left: 20rem;
+      justify-self: flex-end;
     }
   }
 
