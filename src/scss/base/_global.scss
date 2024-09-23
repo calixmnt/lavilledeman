@@ -6,7 +6,7 @@
 
 html {
   body {
-    font-family: "Inter", sans-serif;
+    font-family: Helvetica, "Inter", sans-serif;
     background-color: #fff;
     transition: 0.7s background-color cubic-bezier(0.77, 0, 0.175, 1);
   }
@@ -50,7 +50,7 @@ html {
 
     display: grid;
     grid-template-rows: .5fr .5fr 2fr;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: .2fr 1fr 1fr 1fr;
 
     row-gap: 1.6rem;
 
@@ -63,13 +63,13 @@ html {
 
   .second-heading {
     font-size: $section-title;
-    text-transform: lowercase;
+    text-transform: capitalize;
     line-height: 3rem;
   }
 
   .fourth-heading {
-    font-size: $medium-text;
-    text-transform: lowercase;
+    // font-size: $medium-text;
+    text-transform: capitalize;
     margin-bottom: 0.5rem;
   }
 }

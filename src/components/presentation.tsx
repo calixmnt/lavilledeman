@@ -7,9 +7,9 @@ import montNimba from '../assets/mont-nimba.webp';
 
 const Presentation = () => {
   return (
-    <section className="presentation">
-      <Title dotColor="#1e1a1d" title="Bienvenue dans La ville aux 18 montagnes" />
-      <section className=" container presentation__links">
+    <section className="container presentation">
+      <Title dotColor="#1e1a1d" title="Bienvenue, c'est La ville aux 18 montagnes" />
+      <section className=" presentation__links">
         <LinksGroup title="En vogue" links={vogueLinks} />
         <LinksGroup links={ssLinks} />
       </section>
