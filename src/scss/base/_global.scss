@@ -6,7 +6,7 @@
 
 html {
   body {
-    font-family: Helvetica, "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #fff;
     transition: 0.7s background-color cubic-bezier(0.77, 0, 0.175, 1);
   }
@@ -41,18 +41,31 @@ html {
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto;
     grid-template-columns: 0.2fr 1fr 1fr 1fr;
+
+    row-gap: 3rem;
   }
 
   .presentation {
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: .5fr .5fr 2fr;
-    grid-template-columns: .2fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr 2fr 1fr;
+    grid-template-columns: .2fr 1fr 1.1fr 1fr;
 
     row-gap: 1.6rem;
+
+  }
+
+  .sites {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-rows: .5fr 4fr auto; //TODO: 2eme (auto)
+    grid-template-columns: .2fr 1fr 1.1fr 1fr;
+
+    row-gap: 3rem;
 
   }
 
@@ -67,9 +80,28 @@ html {
     line-height: 3rem;
   }
 
+  .third-heading {
+    font-size: $big-text;
+    text-transform: capitalize;
+  }
+
   .fourth-heading {
-    // font-size: $medium-text;
+    // font-family: $font-arita;
+    letter-spacing: -0.1rem;
+    font-size: $small-text;
+    color: $dark-grey;
+    font-weight: normal;
     text-transform: capitalize;
     margin-bottom: 0.5rem;
+  }
+
+  .special-heading {
+    color: $dark-grey;
+    font-size: $small-text;
+    font-weight: normal;
+  }
+
+  .see-more {
+
   }
 }

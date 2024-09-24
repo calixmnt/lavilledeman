@@ -1,4 +1,25 @@
 .presentation {
+
+  &__socials {
+    grid-row: 2 / 3;
+    grid-column : 2 / 3;
+
+    align-self: flex-end;
+
+    display: flex;
+    column-gap: .9rem;
+
+    .social-icon {
+      width: 1.7rem;
+      height: 1.7rem;
+      background-color: $black;
+      color: $white;
+      padding: .3rem;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+  }
+
   &__links {
     
     grid-row: 2 / 3;
@@ -33,4 +54,10 @@
     height: 100%;
     // object-fit: cover;
   }
+
+  &__description {
+    grid-row: 4 / -1;
+    grid-column : 3 / 4;
+  }
 }
+
