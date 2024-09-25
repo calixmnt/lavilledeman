@@ -2,7 +2,7 @@ const Title = ({ title, dotColor }: { title: string; dotColor: string }) => {
   const titleWordsArray = title.split(" ");
 
   return (
-    <div className="container title-container">
+    <div className="container title-container title-container--presentation">
       <span
         style={{
           backgroundColor: dotColor,

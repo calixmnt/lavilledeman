@@ -69,3 +69,33 @@ export const starEvents = [
       "Conférence mondiale sur l'astrobiologie avec des experts du domaine.",
   },
 ];
+
+
+export const newsCardData = [
+  {
+    number: '01',
+    title: 'Architecture',
+    image: 'src/assets/cascade.webp',
+    description: 'A description for Architecture',
+  },
+  {
+    number: '02',
+    title: 'Interiors, Graphics & Lighting Design',
+  },
+  {
+    number: '03',
+    title: 'Digital & Innovation',
+  },
+  {
+    number: '04',
+    title: 'Landscape',
+  },
+  {
+    number: '05',
+    title: 'Urbanism',
+  },
+  {
+    number: '06',
+    title: 'Turn up the music',
+  },
+];

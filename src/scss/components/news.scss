@@ -1,0 +1,73 @@
+.news {
+  &__see-more {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+
+  &__items {
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.6rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1.1rem;
+  }
+
+  &__card {
+    padding: 1rem;
+    height: 8rem;
+    border: solid 0.1rem $black;
+    border-radius: 10px;
+
+    cursor: pointer;
+  }
+
+  .card {
+    border: 0.2rem solid $black;
+    border-radius: 0.8rem;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    display: grid; // for set up text container at the bottom because alignSelf : End is not supported with display:block on the parent
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__image-container {
+        overflow: hidden;
+    }
+
+    &__image {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__text-container {
+      padding: .8rem;
+      align-self: self-end;
+    }
+
+    &__number {
+      font-size: 14px;
+      color: #888;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__description {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+}

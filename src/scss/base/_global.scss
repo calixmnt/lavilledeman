@@ -6,7 +6,7 @@
 
 html {
   body {
-    font-family: "Inter", sans-serif;
+    font-family: "Urbanist", "Aritaburi", Helvetica, "Inter", sans-serif;
     background-color: #fff;
     transition: 0.7s background-color cubic-bezier(0.77, 0, 0.175, 1);
   }
@@ -42,9 +42,9 @@ html {
 
     display: grid;
     grid-template-rows: 1fr auto auto auto auto auto;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 1.1fr 1fr;
 
-    row-gap: 3rem;
+    row-gap: 5rem;
   }
 
   .presentation {
@@ -62,7 +62,18 @@ html {
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: .5fr auto auto; //TODO: 2eme (auto)
+    grid-template-rows: .5fr auto auto;
+    grid-template-columns: .2fr 1fr 1.1fr 1fr;
+
+    row-gap: 2rem;
+
+  }
+
+  .news {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-rows: .5fr auto auto;
     grid-template-columns: .2fr 1fr 1.1fr 1fr;
 
     row-gap: 2rem;
@@ -113,6 +124,7 @@ html {
   }
 
   .see-more {
-
+    text-decoration: underline;
+    font-size: $small-text;
   }
 }
