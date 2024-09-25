@@ -62,10 +62,21 @@ html {
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: .5fr 4fr auto; //TODO: 2eme (auto)
+    grid-template-rows: .5fr auto auto; //TODO: 2eme (auto)
     grid-template-columns: .2fr 1fr 1.1fr 1fr;
 
-    row-gap: 3rem;
+    row-gap: 2rem;
+
+  }
+
+  .events {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-rows: .5fr auto auto; //TODO: 2eme (auto)
+    grid-template-columns: .2fr 1fr 1.1fr 1fr;
+
+    row-gap: 2rem;
 
   }
 

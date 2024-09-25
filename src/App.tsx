@@ -1,3 +1,4 @@
+import Events from "./components/events.tsx";
 import Footer from "./components/footer.tsx";
 import Header from "./components/header.tsx";
 import Presentation from "./components/presentation.tsx";
@@ -12,6 +13,7 @@ function App() {
       <main className="main">
         <Presentation/>
         <SitesAVisiter />
+        <Events />
       </main>
 
       <Footer />

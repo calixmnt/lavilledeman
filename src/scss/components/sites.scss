@@ -11,12 +11,9 @@
   }
 
   &__see-more {
-    grid-row: 3 / -1;
+    grid-row: 3 / 4;
     grid-column: 3 / 4;
-    justify-self: center;
-  }
-
-  .star-places {
-    grid-column: 1 / -1;
+    text-decoration: underline;
+    font-size: $small-text;
   }
 }
