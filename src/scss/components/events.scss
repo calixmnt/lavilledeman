@@ -1,14 +1,20 @@
 .events {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 
-    &__description {
-        grid-row: 1 / 2;
-        grid-column: 3 / 4;
-    
-        align-self: center;
-    
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1.2fr .8fr;
-      }
+  &__description {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+
+    align-self: center;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .title-container--events {
+    column-gap: 1.4rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+  }
 }

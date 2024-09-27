@@ -7,11 +7,17 @@
 
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1.2fr .8fr;
+    grid-template-columns: 1.2fr 0.8fr;
   }
 
   &__see-more {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
+  }
+
+  .title-container--sites {
+    column-gap: 1.4rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
   }
 }

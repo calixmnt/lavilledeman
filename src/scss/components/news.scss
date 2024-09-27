@@ -32,7 +32,7 @@
     transition: transform 0.2s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-    display: grid; // for set up text container at the bottom because alignSelf : End is not supported with display:block on the parent
+    display: grid; // for set up text container at the bottom because alignSelf : end is not supported with display:block on the parent
 
     &:hover {
       transform: scale(1.05);
@@ -69,5 +69,11 @@
       font-size: 14px;
       color: #666;
     }
+  }
+
+  .title-container--news {
+    column-gap: 1.4rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
   }
 }

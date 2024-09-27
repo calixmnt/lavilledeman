@@ -4,7 +4,7 @@ import Title from "./title.tsx";
 const Events = () => {
   return (
     <section className="events">
-      <Title dotColor="#1e1a1d" title="Les #Events du coin" />
+      <Title className="container title-container title-container--events" dotColor="#1e1a1d" title="Les #Events du coin" />
       <h4 className="events__description special-heading">
         En plus des centres culturels que nous possédons, nous avons chaque mois, des évènements organisés par la municipalité. Let's go !
       </h4>

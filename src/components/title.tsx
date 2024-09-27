@@ -1,8 +1,22 @@
-const Title = ({ title, dotColor }: { title: string; dotColor: string }) => {
+import React from 'react';
+
+interface TitleProps {
+  title: string;
+  dotColor: string;
+  className: string;
+  icon?: React.ElementType;
+}
+
+const Title: React.FC<TitleProps> = ({
+  title,
+  dotColor,
+  className,
+  icon: Icon,
+}) => {
   const titleWordsArray = title.split(" ");
 
   return (
-    <div className="container title-container title-container--presentation">
+    <div className={className}>
       <span
         style={{
           backgroundColor: dotColor,
@@ -21,6 +35,7 @@ const Title = ({ title, dotColor }: { title: string; dotColor: string }) => {
         ) : (
           <>{title}</>
         )}
+      {Icon && <Icon width={40} height={40} />}
       </h2>
     </div>
   );

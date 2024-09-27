@@ -16,6 +16,7 @@ const Presentation = () => {
       <Title
         dotColor="#1e1a1d"
         title="Bienvenue #chezNou, La ville aux 18 montagnes"
+        className="container title-container title-container--presentation"
       />
       <section className="presentation__socials">
         <InstagramLogoIcon className="social-icon" />

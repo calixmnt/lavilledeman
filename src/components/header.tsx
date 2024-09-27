@@ -1,3 +1,16 @@
+interface NavItem {
+  label: string;
+  link: string;
+}
+
+const navItems: NavItem[] = [
+  { label: "Sites à visiter", link: "#" },
+  { label: "Actualités", link: "#" },
+  { label: "Événements", link: "#" },
+  { label: "Histoire de la ville", link: "#" },
+  { label: "Carte", link: "#" },
+];
+
 const Header = () => {
   return (
     <header className="container header">
@@ -10,31 +23,13 @@ const Header = () => {
         </div>
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__item">
-              <a className="nav__link" href="#">
-                histoire de la ville
-              </a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#">
-                sites à visiter
-              </a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#">
-                évènements
-              </a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#">
-                actualités
-              </a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#">
-                carte
-              </a>
-            </li>
+            {navItems.map((navItem, i) => (
+              <li key={i} className="nav__item">
+                <a className="nav__link" href={navItem.link}>
+                  {navItem.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

@@ -81,21 +81,28 @@ export const newsCardData = [
   {
     number: '02',
     title: 'Interiors, Graphics & Lighting Design',
+    description: 'A description for Architecture',
   },
   {
     number: '03',
     title: 'Digital & Innovation',
+    description: 'A description for Architecture',
   },
   {
     number: '04',
     title: 'Landscape',
+    description: 'A description for Architecture',
   },
   {
     number: '05',
+    image: 'src/assets/cascade.webp',
+
     title: 'Urbanism',
   },
   {
     number: '06',
+    image: 'src/assets/cascade.webp',
+
     title: 'Turn up the music',
   },
 ];
