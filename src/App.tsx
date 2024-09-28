@@ -15,8 +15,10 @@ function App() {
         <News />
         <Events />
         {/* <Title icon={ArrowTopRightIcon} className="container title-container title-container--end" dotColor="#fff" title="GetInTouch"/> */}
-        <h2 className="title-container title-container--end second-heading"><a href="#presentation">La Ville De Man</a></h2>
-        <CityMap/>
+          <h2 className="title-container title-container--end second-heading">
+            <a href="#presentation">La Ville De Man</a>
+          </h2>
+          <CityMap />
       </main>
       <Footer />
     </div>

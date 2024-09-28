@@ -1,6 +1,6 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import L, { Icon, MarkerCluster } from "leaflet";
+import L, { Icon } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 
 import epingleIcon from "../assets/epingle.png";
@@ -18,7 +18,7 @@ const CityMap = () => {
     iconSize: L.point(38, 38, true),
   });
 
-  const createCustomClusterIcon = (cluster: MarkerCluster) => {
+  const createCustomClusterIcon = (cluster: { getChildCount: () => unknown; }) => {
     return L.divIcon({
       html: `<span>${cluster.getChildCount()}</span>`,
       className: "custom-marker-cluster",
