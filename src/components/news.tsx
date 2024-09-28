@@ -4,7 +4,7 @@ import Title from "./title.tsx"
 
 const News = () => {
   return (
-    <div className="container news">
+    <section id="news" className="news">
         <Title className="container title-container title-container--news" dotColor="#1e1a1d" title="Les #News" />
         <h4 className="sites__description special-heading">
         Toutes les actualités concernants notre ville sont ici ! Nous nous efforçons à vous les fournir en temps réèl et sans ambiguités.
@@ -23,7 +23,7 @@ const News = () => {
         />
       ))}
       </section>
-    </div>
+    </section>
   )
 }
 

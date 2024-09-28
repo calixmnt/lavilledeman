@@ -7,24 +7,23 @@ import { FaFacebookF } from "react-icons/fa";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 
 import montNimba from "../assets/mont-nimba.webp";
-// import cascade from '../assets/cascade.webp';
 
 const Presentation = () => {
   return (
-    <section className="presentation">
+    <section id="presentation" className="presentation">
       {/* la classe container ? dans la section ? */}
       <Title
         dotColor="#1e1a1d"
         title="Bienvenue #chezNou, La ville aux 18 montagnes"
         className="container title-container title-container--presentation"
       />
-      <section className="presentation__socials">
+      <section className="container presentation__socials">
         <InstagramLogoIcon className="social-icon" />
         <FaXTwitter className="social-icon" />
         <FaFacebookF className="social-icon" />
         <PiYoutubeLogoFill className="social-icon" />
       </section>
-      <section className="presentation__links">
+      <section className="container presentation__links">
         <LinksGroup title="En vogue" links={vogueLinks} />
         <LinksGroup links={ssLinks} />
       </section>
@@ -36,7 +35,7 @@ const Presentation = () => {
         />
       </section>
       <section className="presentation__description">
-        <h3 className="third-heading">Venez découvrir la richesse de notre culture ici à Man. Vous ne le regreterez pas ! 😮‍💨</h3>
+        <h3 className="third-heading">Venez découvrir la richesse de notre culture ici à Man. Vous ne le regreterez pas !</h3>
       </section>
     </section>
   );

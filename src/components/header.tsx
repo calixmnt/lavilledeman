@@ -1,17 +1,27 @@
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+
+import { useState } from 'react';
+
 interface NavItem {
   label: string;
   link: string;
 }
 
 const navItems: NavItem[] = [
-  { label: "Sites à visiter", link: "#" },
-  { label: "Actualités", link: "#" },
-  { label: "Événements", link: "#" },
-  { label: "Histoire de la ville", link: "#" },
-  { label: "Carte", link: "#" },
+  { label: "Sites à visiter", link: "#sites" },
+  { label: "Actualités", link: "#news" },
+  { label: "Événements", link: "#events" },
+  { label: "Histoire de la ville", link: "#city-story" },
+  { label: "Carte", link: "#city-map" },
 ];
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="container header">
       <div className="header__inner">
@@ -21,7 +31,10 @@ const Header = () => {
             <span>Man</span>
           </a>
         </div>
-        <nav className="nav">
+        <div className="nav__hamburger" onClick={toggleMenu}>
+          <HiOutlineMenuAlt4 width={30} height={30}/>
+        </div>
+        <nav className={`nav ${isMenuOpen && 'nav--open'}`}>
           <ul className="nav__list">
             {navItems.map((navItem, i) => (
               <li key={i} className="nav__item">

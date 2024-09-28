@@ -4,6 +4,7 @@ $silver: #CCCCCC;
 $light-grey: #E9EAEB;
 $dark-grey: #999D9E;
 $white: #FFF;
+$primary-color : #49b9d4;
 
 // Font sizes
 $small-text: .9rem;
@@ -13,10 +14,7 @@ $section-title: 3rem;
 
 $font-arita: AritaBuri;
 
-
-// Breakpoints
-$layout-breakpoint-large: 1920px;
-$layout-breakpoint-medium: 1440px;
-$layout-breakpoint-small: 960px;
-$layout-breakpoint-tablet: 768px;
-$layout-breakpoint-xsmall: 480px;
+// Transitions
+$transition-fast: 0.2s ease-in-out;
+$transition-medium: 0.4s ease-in-out;
+$transition-slow: 0.6s ease-in-out;

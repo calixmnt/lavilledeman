@@ -10,11 +10,32 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1.2fr 0.8fr;
+
+    @media screen and (max-width: 1038px) {
+      grid-row: 1 / 2;
+      grid-column: 4 / 5;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-row: 2 / 3;
+      grid-column: 2 / -1;
+    }
+
+  }
+
+  @media screen and (max-width : 768px) {
+    & > h4 {
+      font-size: $medium-text;
+    }
   }
 
   .title-container--events {
     column-gap: 1.4rem;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
+
+    @media screen and (max-width: 768px) {
+      grid-column: 1 / -1;
+    }
   }
 }
