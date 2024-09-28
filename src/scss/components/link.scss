@@ -1,22 +1,37 @@
 .link-item {
     text-transform: uppercase;
-    white-space:nowrap;
+    white-space: nowrap;
     display: flex;
     align-items: center;
-    column-gap: .4rem;
-    padding: .2rem 0;
-    
-}
-
-.link {
+    column-gap: 0.4rem;
+    padding: 0.3rem 0;
+  }
+  
+  .link {
     position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        background: $black;
-        bottom: -0.01rem;
-        left: 0;
-        right: 0;
-        height: 0.01rem;
+    color: $black;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      background: $black;
+      bottom: -0.01rem;
+      left: 0;
+      right: 0;
+      height: 0.01rem;
+    //   transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease-in-out;
     }
-}
+  
+    &:hover {
+    //   color: $primary-color;
+  
+      &::after {
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+    }
+  }

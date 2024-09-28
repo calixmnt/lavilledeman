@@ -32,6 +32,7 @@ const Presentation = () => {
           className="presentation__img"
           src={montNimba}
           alt="Le Mont Nimba à Man"
+          loading="lazy"
         />
       </section>
       <section className="presentation__description">

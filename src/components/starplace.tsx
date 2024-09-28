@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { starPlacesData } from "../lib/constant.ts";
+import CircleSpan from "./circlespan.tsx";
 
 type StarPlaceProps = {
   label: string;
@@ -13,9 +14,7 @@ const StarPlace = ({ label, activities, data }: StarPlaceProps) => {
       <h3 className="container third-heading">{label}</h3>
       <ul className="star-place__activities">
         {activities.map((activity, index) => (
-          <li key={index} className="activity">
-            {activity}
-          </li>
+          <CircleSpan label={activity} key={index}/>
         ))}
       </ul>
       <div className="container sss">
@@ -29,8 +28,8 @@ const StarPlacesSection = () => {
   return (
     <section className="star-places">
       <section className="title">
-        <span className="title--activities special-heading">activities</span>
-        <span className="title--data container special-heading">data</span>
+        <span className="title--activities special-heading">activités</span>
+        <span className="title--data container special-heading">date</span>
       </section>
 
       {

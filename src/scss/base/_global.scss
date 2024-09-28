@@ -10,6 +10,7 @@ html {
     font-family: "Urbanist", "Inter", sans-serif;
     background-color: #fff;
     transition: 0.7s all cubic-bezier(0.77, 0, 0.175, 1);
+    padding-top: 9rem;
   }
 
   a {
@@ -42,7 +43,7 @@ html {
 
     row-gap: 2.6rem;
 
-    @media screen and (max-width : 768px) {
+    @media screen and (max-width: 768px) {
       row-gap: 1.5rem;
     }
 
@@ -70,7 +71,7 @@ html {
   .second-heading {
     font-size: $section-title;
     text-transform: capitalize;
-    line-height: 3rem;
+    line-height: 3.2rem;
   }
 
   .third-heading {
@@ -97,6 +98,23 @@ html {
   .see-more {
     text-decoration: underline;
     font-size: $small-text;
+  }
+
+  .circle-span {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.8rem;
+    border: 1px solid $black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.8s;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
   }
 }
 

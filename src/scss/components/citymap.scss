@@ -1,0 +1,78 @@
+.city-map {
+  grid-row: 6 / 7;
+  grid-column: 1 / -1;
+
+  .map-description-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
+
+.custom-marker-cluster {
+  background-color: $dark-grey;
+  height: 2em;
+  width: 2em;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0px 8px $white;
+}
+
+.card {
+    border: 0.2rem solid $black;
+    border-radius: 0.8rem;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    display: grid; // for set up text container at the bottom because alignSelf : end is not supported with display:block on the parent
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__image-container {
+      overflow: hidden;
+    }
+
+    &__image {
+      border-top-left-radius: 0.8rem;
+      border-top-right-radius: 0.8rem;
+
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__text-container {
+      padding: 0.8rem;
+      align-self: self-end;
+    }
+
+    &__number {
+      font-size: 14px;
+      color: #888;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__description {
+      font-size: 14px;
+      color: $dark-grey;
+    }
+  }

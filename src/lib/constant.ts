@@ -1,12 +1,14 @@
+import { TouristSpot } from "./types.ts";
+
 export const vogueLinks = [
   { label: "Dents de Man" },
   { label: "Ponts de Lianes" },
-  { label: "Troisieme pp" },
+  { label: "Mont Tonkoui" },
 ];
 
 export const ssLinks = [
-  { label: "Ponts de Lianes" },
-  { label: "deuxieme lien" },
+  { label: "Cascade du mont Tonkoui" },
+  { label: "Mont Peko" },
 ];
 
 export const starPlacesData = [
@@ -70,7 +72,6 @@ export const starEvents = [
   },
 ];
 
-
 export const newsCardData = [
   {
     number: '01',
@@ -106,3 +107,70 @@ export const newsCardData = [
     title: 'Turn up the music',
   },
 ];
+
+export const footerLinks = [
+  {}
+];
+
+export const cities = [
+  "Abidjan", "Oslo", "COPENHAGEN", "PARIS", "HONG KONG", 
+]
+
+export const touristSpots: TouristSpot[] = [
+  {
+    name: "Les Dents de Man",
+    position: [7.4731, -7.5483],
+    description: "Un massif montagneux qui offre une vue imprenable sur la ville de Man.",
+  },
+  {
+    name: "Mont Nimba",
+    position: [7.6167, -8.4],
+    description: "Le Mont Nimba est une réserve naturelle classée au patrimoine mondial de l'UNESCO.",
+  },
+  {
+    name: "Cascade de Man",
+    position: [7.4132, -7.5391],
+    description: "Une belle cascade située dans la région de Man, idéale pour les randonnées.",
+  },
+  {
+    name: "La Forêt Sacrée de Gbépleu",
+    position: [7.4014, -7.5525],
+    description: "Un lieu sacré où vivent des singes en liberté, symbole de la région.",
+  },
+  {
+    name: "Pont de Lianes",
+    position: [7.387, -7.556],
+    description: "Un pont traditionnel en lianes construit par les autochtones, un site unique à visiter.",
+  },
+  {
+    name: "Le Mont Tonkoui",
+    position: [7.4261, -7.6117],
+    description: "Le deuxième plus haut sommet de Côte d'Ivoire offrant une vue panoramique.",
+  },
+  {
+    name: "La Dent de Man",
+    position: [7.4815, -7.5411],
+    description: "Le plus grand pic du massif des Dents de Man, prisé pour l'escalade.",
+  },
+  {
+    name: "Café Touristique de Man",
+    position: [7.4125, -7.5395],
+    description: "Un café accueillant avec une vue sur la ville et les montagnes environnantes.",
+  },
+  {
+    name: "Parc National de Taï",
+    position: [5.8500, -7.3500],
+    description: "Une forêt tropicale dense et sauvage, site classé patrimoine mondial de l'UNESCO.",
+  },
+  {
+    name: "Les Vignobles de la Région de Man",
+    position: [7.4000, -7.5300],
+    description: "Découverte des vignobles locaux et de la production de vin artisanale.",
+  },
+  {
+    name: "Le Lac aux Caïmans",
+    position: [7.3700, -7.5500],
+    description: "Un lac naturel abritant des caïmans, à observer avec prudence.",
+  },
+];
+

@@ -1,6 +1,6 @@
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface NavItem {
   label: string;
@@ -17,13 +17,35 @@ const navItems: NavItem[] = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsScrollingUp(false);
+      } else {
+        setIsScrollingUp(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="container header">
+    <header className={`container header ${!isScrollingUp ? 'header--hidden' : ''}`}>
       <div className="header__inner">
         <div className="header__logo">
           <a href="/" className="header__link">

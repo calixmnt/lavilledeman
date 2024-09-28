@@ -62,25 +62,9 @@
       }
     }
   }
-
-  .footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 0.9rem;
-
-    .footer__links {
-      display: flex;
-      flex-direction: column;
-
-      p {
-        margin: 0.3rem 0;
-        cursor: pointer;
-      }
-    }
-  }
   .footer__copyright {
-    text-align: right;
+    font-size: $small-text;
+    text-align: left;
     color: $dark-grey;
   }
 }

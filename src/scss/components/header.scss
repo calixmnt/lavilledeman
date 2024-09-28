@@ -1,14 +1,25 @@
 .header {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
-
-  position: relative;
-  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: $white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  z-index: 99;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  z-index: 2999;
   font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &--hidden {
+    transform: translateY(-100%);
+  }
+
+  &--scrolled {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
   &__inner {
     display: grid;
@@ -58,7 +69,7 @@
         }
       }
 
-      @media screen and (max-width : 1400px) {
+      @media screen and (max-width: 1400px) {
         & {
           left: 3rem;
         }
@@ -75,22 +86,43 @@
     grid-template-rows: 1fr;
     grid-template-columns: auto auto auto auto 2fr;
     column-gap: 2.5rem;
-
   }
 
   &__item {
     &:last-of-type {
       justify-self: flex-end;
     }
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   &__link {
     display: block;
     text-transform: uppercase;
+    position: relative;
+    color: $black;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px;
+      width: 100%;
+      background-color: $black;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      // color: $primary-color;
+
+      &::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
   }
 
   &__hamburger {
