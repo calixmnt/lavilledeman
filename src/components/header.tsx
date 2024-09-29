@@ -56,7 +56,7 @@ const Header = () => {
         <div className="nav__hamburger" onClick={toggleMenu}>
           <HiOutlineMenuAlt4 width={30} height={30}/>
         </div>
-        <nav className={`nav ${isMenuOpen && 'nav--open'}`}>
+        <nav className={`nav ${isMenuOpen ? 'nav--open' : ''}`}>
           <ul className="nav__list">
             {navItems.map((navItem, i) => (
               <li key={i} className="nav__item">

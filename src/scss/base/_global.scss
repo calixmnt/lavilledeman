@@ -11,6 +11,7 @@ html {
     background-color: #fff;
     transition: 0.7s all cubic-bezier(0.77, 0, 0.175, 1);
     padding-top: 9rem;
+
   }
 
   a {
@@ -69,20 +70,20 @@ html {
   }
 
   .second-heading {
-    font-size: $section-title;
+    font-size: $section-title-responsive;
     text-transform: capitalize;
     line-height: 3.2rem;
   }
 
   .third-heading {
-    font-size: $big-text;
+    font-size: $big-text-responsive;
     text-transform: capitalize;
   }
 
   .fourth-heading {
     // font-family: $font-arita;
     letter-spacing: -0.1rem;
-    font-size: $small-text;
+    font-size: $small-text-responsive;
     color: $dark-grey;
     font-weight: normal;
     text-transform: capitalize;
@@ -91,13 +92,13 @@ html {
 
   .special-heading {
     color: $dark-grey;
-    font-size: $small-text;
+    font-size: $small-text-responsive;
     font-weight: normal;
   }
 
   .see-more {
     text-decoration: underline;
-    font-size: $small-text;
+    font-size: $small-text-responsive;
   }
 
   .circle-span {

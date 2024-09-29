@@ -14,36 +14,45 @@ export const ssLinks = [
 export const starPlacesData = [
   {
     label: "Dents De Man",
-    data: "2021",
+    duration: "3-4 heures",
+    difficulty: "Modéré",
+    bestTimeToVisit: "Novembre à Février",
     activities: ["Escalade", "Randonnée"],
+    detailedInfo: "Les Dents de Man sont une chaîne de montagnes emblématiques, offrant des sentiers de randonnée pittoresques et des vues à couper le souffle. Idéal pour les amoureux de la nature.",
+    imageSrc:"src/assets/montagne.jpg"
   },
-  { label: "Mt Tonkoui", data: "2022", activities: ["Escalade", "Récoltes"] },
+  {
+    label: "Mont Tonkoui",
+    difficulty: "Modéré",
+    activities: ["Escalade", "Récoltes"],
+    detailedInfo: "Le Mont Tonkoui est le point culminant de la Côte d'Ivoire, avec des possibilités d'escalade et des paysages magnifiques. Parfait pour les amateurs d'aventure.",
+  },
   {
     label: "Pont de Lianes",
-    data: "2022",
+    highlights: "Vue panoramique, traversée des lianes",
     activities: ["Promenade", "Tyrolienne"],
+    detailedInfo: "Le Pont de Lianes offre une vue panoramique sur la vallée environnante. La traversée à la tyrolienne est une expérience palpitante à ne pas manquer.",
   },
   {
-    label: "Mt Nimba",
-    data: "2021",
-    activities: [
-      "Escalade",
-      "Promenade",
-      "Randonnée",
-      "Activités Ludiques",
-    ],
+    label: "Mont Nimba",
+    bestTimeToVisit: "Novembre à Février",
+    activities: ["Escalade", "Promenade", "Randonnée", "Activités Ludiques"],
+    detailedInfo: "Mont Nimba est un site classé au patrimoine mondial de l'UNESCO, célèbre pour sa biodiversité unique. Les randonnées offrent des panoramas spectaculaires.",
   },
   {
     label: "Mt Peko",
-    data: "2022",
+    difficulty: "Difficile",
     activities: ["Tyrolienne", "Promenande à Vélo", "Escalade"],
+    detailedInfo: "Le Mont Peko est une destination pour les aventuriers avec ses tyroliennes excitantes et ses sentiers d'escalade. Parfait pour ceux qui recherchent des sensations fortes.",
   },
   {
     label: "La Cascade",
-    data: "2022",
+    bestTimeToVisit: "Juin à Septembre",
     activities: ["Nage", "Visite de la forêt"],
+    detailedInfo: "La Cascade est un lieu de détente idéal, avec des eaux cristallines parfaites pour la baignade. Explorez les forêts environnantes et découvrez la faune locale.",
   },
 ];
+
 
 export const starEvents = [
   {
@@ -75,38 +84,42 @@ export const starEvents = [
 export const newsCardData = [
   {
     number: '01',
-    title: 'Architecture',
-    image: 'src/assets/cascade.webp',
-    description: 'A description for Architecture',
+    title: 'Festival des Masques',
+    image: 'src/assets/masque.jpg',
+    description: 'Découvrez la célèbre fête des masques de la région de Man, un événement culturel majeur.',
   },
   {
     number: '02',
-    title: 'Interiors, Graphics & Lighting Design',
-    description: 'A description for Architecture',
+    title: 'Randonnée au Mont Tonkoui',
+    image: 'src/assets/montagne.jpg',
+    description: 'Profitez d\'une vue imprenable lors de la randonnée au sommet du Mont Tonkoui.',
   },
   {
     number: '03',
-    title: 'Digital & Innovation',
-    description: 'A description for Architecture',
+    title: 'Innovation agricole à Man',
+    image: 'src/assets/agriculture.jpg',
+    description: 'La ville se démarque par des projets innovants dans le domaine agricole.',
   },
   {
     number: '04',
-    title: 'Landscape',
-    description: 'A description for Architecture',
+    title: 'Jardin botanique de Man',
+    image: 'src/assets/jardin.jpg',
+    description: 'Visitez le jardin botanique pour découvrir la diversité de la flore ivoirienne.',
   },
-  {
-    number: '05',
-    image: 'src/assets/cascade.webp',
-
-    title: 'Urbanism',
-  },
-  {
-    number: '06',
-    image: 'src/assets/cascade.webp',
-
-    title: 'Turn up the music',
-  },
+  // {
+  //   number: '05',
+  //   title: 'Urbanisme en pleine expansion',
+  //   image: '/src/assets/urbanisme-man.webp',
+  //   description: 'La ville de Man connaît un développement urbain rapide avec plusieurs projets en cours.',
+  // },
+  // {
+  //   number: '06',
+  //   title: 'Concert traditionnel',
+  //   image: '/src/assets/concert-traditionnel.webp',
+  //   description: 'Plongez dans la musique traditionnelle avec un concert en plein air au cœur de Man.',
+  // },
 ];
+
 
 export const footerLinks = [
   {}

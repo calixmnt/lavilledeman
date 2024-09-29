@@ -31,7 +31,7 @@
 
   @media screen and (max-width : 768px) {
     & > h4 {
-      font-size: $medium-text;
+      font-size: $medium-text-responsive;
     }
   }
 
@@ -84,7 +84,8 @@
     }
 
     &__image-container {
-      overflow: hidden;
+      // overflow: hidden;
+      height: 200px;
     }
 
     &__image {
@@ -92,7 +93,7 @@
       border-top-right-radius: 0.8rem;
 
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     &__text-container {

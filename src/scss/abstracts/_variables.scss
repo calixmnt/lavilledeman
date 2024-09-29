@@ -1,4 +1,4 @@
-// Colors
+
 $black: #1E1A1D;
 $silver: #CCCCCC;
 $light-grey: #E9EAEB;
@@ -6,15 +6,12 @@ $dark-grey: #999D9E;
 $white: #FFF;
 $primary-color : #49b9d4;
 
-// Font sizes
-$small-text: 1.1rem;
-$medium-text: 1.4rem;
-$big-text: 2.2rem;
-$section-title: 3.2rem;
+$small-text: .9rem;
+$medium-text: 1.2rem;
+$big-text: 2rem;
+$section-title: 3rem;
 
-$font-arita: AritaBuri;
-
-// Transitions
-$transition-fast: 0.2s ease-in-out;
-$transition-medium: 0.4s ease-in-out;
-$transition-slow: 0.6s ease-in-out;
+$small-text-responsive: calc(#{$small-text} + 0.05vw);
+$medium-text-responsive: calc(#{$medium-text} + .09vw);
+$big-text-responsive: calc(#{$big-text} + .1vw);
+$section-title-responsive: calc(#{$section-title} + .2vw);
