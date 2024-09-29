@@ -11,7 +11,6 @@ import montNimba from "../assets/mont-nimba.webp";
 const Presentation = () => {
   return (
     <section id="presentation" className="presentation">
-      {/* la classe container ? dans la section ? */}
       <Title
         dotColor="#1e1a1d"
         title="Bienvenue #chezNou, La ville aux 18 montagnes"
@@ -23,7 +22,7 @@ const Presentation = () => {
         <FaFacebookF className="social-icon" />
         <PiYoutubeLogoFill className="social-icon" />
       </section>
-      <section className="container presentation__links">
+      <section className="presentation__links">
         <LinksGroup title="En vogue" links={vogueLinks} />
         <LinksGroup links={ssLinks} />
       </section>

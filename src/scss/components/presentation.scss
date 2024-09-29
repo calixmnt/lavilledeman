@@ -29,6 +29,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 .8rem;
 
     & > :nth-child(1) {
       grid-row: 1 / 2;
