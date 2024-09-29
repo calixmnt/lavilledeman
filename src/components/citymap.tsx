@@ -3,7 +3,7 @@ import "leaflet/dist/leaflet.css";
 import L, { Icon } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 
-import epingleIcon from "../assets/epingle.png";
+import epingleIcon from "/assets/epingle.png";
 import { touristSpots } from "../lib/constant.ts";
 import { useState } from "react";
 import { TouristSpot } from "../lib/types.ts";

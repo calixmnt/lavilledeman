@@ -19,7 +19,7 @@ export const starPlacesData = [
     bestTimeToVisit: "Novembre à Février",
     activities: ["Escalade", "Randonnée"],
     detailedInfo: "Les Dents de Man sont une chaîne de montagnes emblématiques, offrant des sentiers de randonnée pittoresques et des vues à couper le souffle. Idéal pour les amoureux de la nature.",
-    imageSrc:"src/assets/montagne.jpg"
+    imageSrc:"/assets/montagne.jpg"
   },
   {
     label: "Mont Tonkoui",
@@ -85,25 +85,25 @@ export const newsCardData = [
   {
     number: '01',
     title: 'Festival des Masques',
-    image: 'src/assets/masque.jpg',
+    image: '/assets/masque.jpg',
     description: 'Découvrez la célèbre fête des masques de la région de Man, un événement culturel majeur.',
   },
   {
     number: '02',
     title: 'Randonnée au Mont Tonkoui',
-    image: 'src/assets/montagne.jpg',
+    image: '/assets/montagne.jpg',
     description: 'Profitez d\'une vue imprenable lors de la randonnée au sommet du Mont Tonkoui.',
   },
   {
     number: '03',
     title: 'Innovation agricole à Man',
-    image: 'src/assets/agriculture.jpg',
+    image: '/assets/agriculture.jpg',
     description: 'La ville se démarque par des projets innovants dans le domaine agricole.',
   },
   {
     number: '04',
     title: 'Jardin botanique de Man',
-    image: 'src/assets/jardin.jpg',
+    image: '/assets/jardin.jpg',
     description: 'Visitez le jardin botanique pour découvrir la diversité de la flore ivoirienne.',
   },
   // {

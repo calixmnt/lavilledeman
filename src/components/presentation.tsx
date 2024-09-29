@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 
-import montNimba from "../assets/mont-nimba.webp";
+import montNimba from "/assets/mont-nimba.webp";
 
 const Presentation = () => {
   return (
